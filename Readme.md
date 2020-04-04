@@ -1,5 +1,5 @@
 # Bookstore
-*disclaimed: This is only a playground, nothing serious, idk if it will be of any help to you.*
+*disclaimer: This is only a playground, nothing serious, idk if it will be of any help to you.*
 
 
 Bookstore is a python/flask webserver helping to easily host a bunch of books.
