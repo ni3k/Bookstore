@@ -19,7 +19,7 @@ first of all populate your books in rawbooks folder
 
 second: copy .env.example -> .env
 
-thirst:
+third:
 ```bash
 $ flask db init
 $ flask db insert:all # this will insert all titles from rawbooks in db
