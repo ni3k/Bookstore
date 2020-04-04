@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}BookHome{% endblock %}
+{% block content %}
+<div class="container w-full max-w-none mx-auto h-screen bg-indigo-700">
+   <h2 class="text-2xl py-3 px-5 text-purple-100 bg-indigo-700"> Searches for: {{searched}} </h2>
+   <div class="flex justify-start py-4 px-10 ">
+      {% if books|length == 0 %}
+         <h2 class="text-1xl py-3 px-5 text-purple-100 bg-indigo-700"> There are no books with this name or author </h2>
+      {% endif %}
+      <ol class="list-inside list-decimal">
+         {% for book in books %}
+            <li class="
+                        text-2xl
+                        text-purple-200
+                        underline
+                        hover:no-underline
+                        ">
+               <a href="/books/{{book.id}}"> {{ book.name }} </a>
+            </li>
+         {% endfor %}
+      </ol>
+   </div>
+</div>
+{% endblock %}
